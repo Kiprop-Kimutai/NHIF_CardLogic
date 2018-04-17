@@ -1,0 +1,144 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10px"
+    android:paddingRight="10px"
+    android:paddingTop="10px"
+    android:paddingBottom="10px"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Example of Broadcast"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tutorials point "
+        android:textColor="#ff87ff09"
+        android:textSize="30dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:text="Broadcast Intent"
+        android:onClick="broadcastIntent"
+        android:layout_marginBottom="52dp"
+        android:layout_above="@+id/button3"
+        android:layout_alignEnd="@+id/activity_2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:text="Broadcast second  Intent"
+        android:onClick="myIntent"
+        android:layout_marginBottom="12dp"
+        android:layout_above="@+id/testEV2"
+        android:layout_alignStart="@+id/textView1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ActivateEV2"
+        android:text="Initialize Card"
+        android:onClick="authenticatePCCLevelAndChangeKeys"
+        android:layout_below="@+id/button3"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_marginStart="35dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AuthenticateEV2"
+        android:text="Authenticate Card"
+        android:onClick="AuthenticateView"
+        android:layout_below="@+id/ActivateEV2"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_marginStart="35dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CreateBeneficiary"
+        android:text="Create Application"
+        android:onClick="CreateApplicationView"
+        android:layout_below="@+id/AuthenticateEV2"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_marginStart="35dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CreateFile"
+        android:text="Create File"
+        android:onClick="CreateFileView"
+        android:layout_below="@+id/CreateBeneficiary"
+        android:layout_alignStart="@+id/CreateBeneficiary" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/WriteData"
+        android:text="Write Data"
+        android:onClick="WriteDataView"
+        android:layout_below="@+id/CreateFile"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_marginStart="35dp" />
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/ReadData"
+    android:text="Read Card"
+    android:onClick="ReadDataView"
+    android:layout_below="@+id/WriteData"
+    android:layout_centerVertical="true"
+    android:layout_alignStart="@+id/textView1"
+    android:layout_marginStart="35dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/FormatCard"
+        android:text="Format Card"
+        android:onClick="FormatCardView"
+        android:layout_below="@+id/ReadData"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_marginStart="35dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/GetFpSize"
+        android:text="FPSize"
+        android:onClick="GetFpSizeView"
+        android:layout_below="@+id/FormatCard"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_marginStart="35dp" />
+
+
+
+
+
+</RelativeLayout>
